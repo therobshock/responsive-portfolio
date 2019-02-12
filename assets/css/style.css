@@ -2,10 +2,10 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    /* margin: 0 auto;
     height: 0 auto;
     width: 0 auto;
-    padding: 0 auto;
+    padding: 0 auto; */
     /* margin: 0;
     padding: 0; */
 }
@@ -193,7 +193,7 @@ textarea {
     padding: 0;
     margin: 20px auto;
 }
-input[type=submit], {
+input[type=submit] {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -202,3 +202,26 @@ input[type=submit], {
     margin: 16px;
     cursor: pointer;
   }
+
+@media screen and (max-width: 980px) {
+    header {width: 100%; height: auto;}
+    article{width: auto}
+}
+
+@media screen and (max-width: 768px) {
+    #header {width: 100%; /*height: auto;*/}
+    article{max-width: 768px;}
+    #profpic{width: 40%; padding: auto; margin: auto;}
+    #image{width: 100%; padding: auto; margin: auto;}
+    nav{width: 100%; max-width: 768px; right: auto; bottom: auto;}
+    
+}
+
+@media screen and (max-width: 640px) {
+    header {position: static;}
+    article{max-width: 640px;}
+    #profpic{width: 100%; padding: auto; margin: auto;}
+    #image{width: 100%; padding: auto; margin: auto;}
+    nav{position: static;}
+    #message {height: 150px;}
+}
